@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Pioneer Bank</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="loginArea">
+        <h1 class="pioneer-title">Welcome to Pioneer</h1>
+        <div id="formArea">
+            <form action="#">
+                <input type="text" placeholder="Email" class="form-control">
+                <br>
+                <input type="password" placeholder="Password" class="form-control">
+                <br>
+                <button class="btn btn-success" id="poineerButton">Next</button>
+            </form>
+        </div>
+    </div>
+    <div id="transactionArea">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="deposite status">
+                        <h5>Deposit</h5>
+                        <h2>$ <span id="currentDeposite">00</span></h2>
+                    </div>
+
+                </div>
+                <div class="col-md-4">
+                    <div class="withdraw status">
+                        <h5>Withdraw</h5>
+                        <h2>$ <span id="currentWithdraw">00</span></h2>
+                    </div>
+
+                </div>
+                <div class="col-md-4">
+                    <div class="balance status">
+                        <h5>Balance</h5>
+                        <h2>$<span id="currentBalance">1200</span></h2>
+                    </div>
+
+                </div>
+                <div class="col-md-6">
+                    <div class="half-width">
+                        <h5>Deposite</h5>
+                        <input id="depositeAmount" type="text" class="form-control"
+                            placeholder="$ amount you want to deposite">
+                        <button id="addDeposite" class="btn btn-success">Deposite</button>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="half-width">
+                        <h5>Withdraw</h5>
+                        <input id="withdrawAmmount" type="text" class="form-control" placeholder="$ amount you want to withdraw">
+                        <button id="addWithdraw" class="btn btn-success">Withdraw</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
